@@ -11,8 +11,7 @@ int main (){
 	while(r == 's'|| r == 'S'){
 		std::cout <<"Que ejercicio desea hacer: "<< "\n1.Ejercicio 1\n" << "2.Ejercicio 2\n";
 		std::cin >> op;
-		switch(op){
-			case 1:
+			if(op == 1){
 			long x = 1;
 			while(x <= 100000){
 				if(x == metodo(x)){
@@ -22,13 +21,13 @@ int main (){
 					++x;
 				}
 			}
-			break;
+		}
 
-			case 2:
-			std::cout<<"bienvenido";
-				break;
-
+			if(op == 2){
+				std::cout<<"Bienvenido\n";
+				
 			}
+
 		}
 	}
 	long metodo(long x){
