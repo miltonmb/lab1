@@ -4,6 +4,7 @@
 
 long factorial(long);
 long metodo(long);
+int metodo2(int);
 
 int main (){
 	int op = 0;
@@ -25,7 +26,22 @@ int main (){
 
 			if(op == 2){
 				std::cout<<"Bienvenido\n";
-				
+				int n1 = 0;
+				int n2 = 0;
+				int n3 = 0;
+				int n4 = 0;
+				std::cout<<"Ingrese un numero: \n";
+				std::cin>>n1;
+				std::cout<<"Ingrese un numero: \n";
+				std::cin>>n2;
+				std::cout<<"Hola!\n";
+				n3 = metodo2(n1);
+				n4 = metodo2(n2);
+				if(n3 == n2 && n4 == n1){
+					std::cout<<"los numeros son amigos!\n";
+				}
+
+
 			}
 
 		}
@@ -47,4 +63,14 @@ int main (){
 		}else{
 			return s * factorial(s-1);
 		}
+	}
+
+	int metodo2(int x){
+		long suma = 0;
+		for (int i = 1; i < x; i++){
+			if(x%i == 0){
+				suma+= i;
+			}
+		}
+		return suma;
 	}
