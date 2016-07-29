@@ -69,7 +69,7 @@ int main (){
 			return s * factorial(s-1);
 		}
 	}
-
+	//metodo final
 	int metodo2(int x){
 		long suma = 0;
 		for (int i = 1; i < x; i++){
