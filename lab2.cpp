@@ -3,7 +3,9 @@
 #include <stdio.h>
 
 long factorial(long);
+
 long metodo(long);
+
 int metodo2(int);
 
 int main (){
@@ -39,6 +41,8 @@ int main (){
 				n4 = metodo2(n2);
 				if(n3 == n2 && n4 == n1){
 					std::cout<<"los numeros son amigos!\n";
+				}else{
+					std::cout<<"Ellos nos son amigos, son enemigos a MUERTE!!!";
 				}
 
 			}
