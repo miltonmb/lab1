@@ -41,8 +41,9 @@ int main (){
 					std::cout<<"los numeros son amigos!\n";
 				}
 
-
 			}
+				std::cout<<"DESEA CONTINUAR[s/n]: ";
+				std::cin>>r;
 
 		}
 	}
